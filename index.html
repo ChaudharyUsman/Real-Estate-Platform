@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>PrimeEstates - Premium Real Estate Properties</title>
+    <meta name="description" content="Find your dream home with PrimeEstates. Browse luxury properties, apartments, and commercial real estate with our advanced search and filtering tools.">
+    <meta name="keywords" content="real estate, property, homes, apartments, luxury properties, buy house, rent property">
+    
+    <meta property="og:title" content="PrimeEstates - Premium Real Estate Properties">
+    <meta property="og:description" content="Find your dream home with PrimeEstates. Browse luxury properties with advanced search tools.">
+    
+    <meta name="twitter:title" content="PrimeEstates - Premium Real Estate Properties">
+    <meta name="twitter:description" content="Find your dream home with PrimeEstates. Browse luxury properties with advanced search tools.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #f8fafc;
+            --accent-color: #10b981;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply bg-white text-[var(--primary-color)] px-6 py-3 rounded-lg font-medium border border-[var(--primary-color)] hover:bg-[var(--secondary-color)] transition-colors duration-200;
+        }
+        
+        .property-card {
+            @apply bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden;
+        }
+        
+        .search-input {
+            @apply w-full px-4 py-3 border border-[var(--border-color)] rounded-lg focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent;
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/SearchForm.js"></script>
+    <script type="text/babel" src="components/FeaturedProperties.js"></script>
+    <script type="text/babel" src="components/PropertyCard.js"></script>
+    <script type="text/babel" src="components/CallToAction.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="utils/sampleData.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

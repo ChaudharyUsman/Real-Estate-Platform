@@ -1,0 +1,8 @@
+:root {
+  --primary-color: #0ea5e9; /* Sky blue */
+  --secondary-color: #f0f9ff; /* Light blue background */
+  --accent-color: #10b981; /* Emerald */
+  --text-primary: #0f172a; /* Slate 900 */
+  --text-secondary: #64748b; /* Slate 500 */
+  --border-color: #cbd5e1; /* Slate 300 */
+}
