@@ -1,6 +1,8 @@
 # Real Estate Platform
 
 A modern, responsive real estate website built with React.js, featuring property listings, dashboard management, and user-friendly interfaces.
+
+
 <img width="1336" height="621" alt="image" src="https://github.com/user-attachments/assets/24812958-6efd-414a-a7c4-be89cbbac33b" />
 
 ## Features
